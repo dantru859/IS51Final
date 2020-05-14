@@ -12,12 +12,15 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" [routerLink]="['invoice']">Invoice <span class="sr-only">(current)</span></a>
+            <button class="btn btn-primary">Show Invoice</button>
           </li>
           <li class="nav-item active">
             <a class="nav-link" [routerLink]="['cart']">Cart <span class="sr-only">(current)</span></a>
+            <button class="btn btn-primary">Show Cart</button>
           </li>
           <li class="nav-item active">
-            <a class="nav-link">About</a>
+            <a class="nav-link" (click)="about(about)">About</a>
+            <button class="btn btn-primary">Show About</button>
           </li>
         </ul>
       </div>

@@ -3,6 +3,8 @@ import { Http } from '@angular/http';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { ToastService } from '../toast/toast.service';
+import {LocalStorageService} from '../localStorageService';
+
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',

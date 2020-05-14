@@ -16,8 +16,16 @@ export class ToastComponent implements OnInit {
   ngOnInit() {
     this.toastService.toastChanged.subscribe((alerts) => {
       this.alerts.push(alerts);
+
+    setInterval(() => {
+      this.showToast();
+    }, 3000);
     });
   }
+
+  showToast() {
+    
+  };
 
   onClosed(e) {
   }
